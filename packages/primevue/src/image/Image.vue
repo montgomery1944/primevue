@@ -97,7 +97,7 @@ export default {
         },
         onImageClick() {
             if (this.preview) {
-                blockBodyScroll();
+                blockBodyScroll(this.$primevueStyled.$dt);
                 this.maskVisible = true;
                 setTimeout(() => {
                     this.previewVisible = true;
@@ -163,7 +163,7 @@ export default {
             !this.isUnstyled && addClass(this.mask, 'p-overlay-mask-leave');
         },
         onLeave() {
-            unblockBodyScroll();
+            unblockBodyScroll(this.$primevueStyled.$dt);
             this.$emit('hide');
         },
         onAfterLeave(el) {
@@ -181,7 +181,7 @@ export default {
             this.previewVisible = false;
             this.rotate = 0;
             this.scale = 1;
-            unblockBodyScroll();
+            unblockBodyScroll(this.$primevueStyled.$dt);
         }
     },
     computed: {

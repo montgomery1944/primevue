@@ -162,14 +162,14 @@ export default {
             }
 
             if (this.blockScroll) {
-                blockBodyScroll();
+                blockBodyScroll(this.$primevueStyled.$dt);
             }
         },
         disableDocumentSettings() {
             this.unbindOutsideClickListener();
 
             if (this.blockScroll) {
-                unblockBodyScroll();
+                unblockBodyScroll(this.$primevueStyled.$dt);
             }
         },
         onKeydown(event) {
