@@ -52,7 +52,7 @@ export default {
                 });
 
                 document.body.appendChild(this.mask);
-                blockBodyScroll();
+                blockBodyScroll(this.$primevueStyled.$dt);
                 document.activeElement.blur();
             } else {
                 this.mask = createElement('div', {
@@ -92,7 +92,7 @@ export default {
 
             if (this.fullScreen) {
                 document.body.removeChild(this.mask);
-                unblockBodyScroll();
+                unblockBodyScroll(this.$primevueStyled.$dt);
             } else {
                 this.$refs.container?.removeChild(this.mask);
             }
