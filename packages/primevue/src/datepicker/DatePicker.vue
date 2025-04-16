@@ -571,11 +571,11 @@ import ChevronDownIcon from '@primevue/icons/chevrondown';
 import ChevronLeftIcon from '@primevue/icons/chevronleft';
 import ChevronRightIcon from '@primevue/icons/chevronright';
 import ChevronUpIcon from '@primevue/icons/chevronup';
-import Button from 'primevue/button';
-import InputText from 'primevue/inputtext';
-import OverlayEventBus from 'primevue/overlayeventbus';
-import Portal from 'primevue/portal';
-import Ripple from 'primevue/ripple';
+import Button from '@primevue/primevue/button';
+import InputText from '@primevue/primevue/inputtext';
+import OverlayEventBus from '@primevue/primevue/overlayeventbus';
+import Portal from '@primevue/primevue/portal';
+import Ripple from '@primevue/primevue/ripple';
 import BaseDatePicker from './BaseDatePicker.vue';
 
 export default {
